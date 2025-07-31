@@ -23,7 +23,7 @@ public class CheckoutPage {
 
 	// 2 .WebElement Initialization
 
-	public CheckoutPage(WebDriver driver) {
+	public CheckoutPage (WebDriver driver) {
 		PageFactory.initElements(driver, this);
 
 	}

@@ -6,39 +6,37 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-	//Declaration
 	// 1. WebElement Identification & Declaration
 	
-		@FindBy(id = "user-name")
-		private WebElement usernametextfield;
+	@FindBy(id = "user-name")
+	private WebElement usernametextfield;
 
-		@FindBy(id = "password")
-		private WebElement passwordtextfield;
+	@FindBy(id = "password")
+	private WebElement passwordtextfield;
 
-		@FindBy(id = "login-button")
-		private WebElement loginbutton;
+	@FindBy(id = "login-button")
+	private WebElement loginbutton;
 
-		// 2. WebElement Initialization
-		
-		public LoginPage(WebDriver driver) 
-		{
-			PageFactory.initElements(driver, this);
-		}
+	// 2. WebElement Initialization
+	
+	public LoginPage(WebDriver driver) 
+	{
+		PageFactory.initElements(driver, this);
+	}
 
-		// 3. WebElement Utilization
-		
-		public WebElement getusernametextfield() {
-			return usernametextfield;
-		}
+	// 3. WebElement Utilization
+	
+	public WebElement getusernametextfield() {
+		return usernametextfield;
+	}
 
-		public WebElement getpasswordtextfield() {
-			return passwordtextfield;
-		}
+	public WebElement getpasswordtextfield() {
+		return passwordtextfield;
+	}
 
-		public WebElement getloginbutton() {
-			return loginbutton;
-		}
-
+	public WebElement getloginbutton() {
+		return loginbutton;
+	}
 
 }
 	

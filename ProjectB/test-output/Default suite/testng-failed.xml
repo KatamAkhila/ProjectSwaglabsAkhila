@@ -6,9 +6,11 @@
       <class name="producttest.Example1Test">
         <methods>
           <include name="browserTerminate"/>
+          <include name="ReportSetup"/>
           <include name="Detail"/>
           <include name="browserSetup"/>
           <include name="LogIn"/>
+          <include name="ReportTerminate"/>
           <include name="Logout"/>
         </methods>
       </class> <!-- producttest.Example1Test -->
