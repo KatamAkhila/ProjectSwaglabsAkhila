@@ -76,7 +76,7 @@ public class BaseConfig {
 		WebDriverLibrary.navToApp(PropertiesLibrary.readData("url"));
 
 		// Step 1.6: Verify title
-		Assert.assertEquals("Swag Labs", driver.getTitle());
+		Assert.assertEquals(driver.getTitle(),"Swag Labs" );
 
 		// Step 1.7: Log setup
 		Reporter.log("Browser setup successful", true);
